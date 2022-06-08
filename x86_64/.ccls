@@ -1,0 +1,3 @@
+clang
+-Iincludes
+-I../includes
