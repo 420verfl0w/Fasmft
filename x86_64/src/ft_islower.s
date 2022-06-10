@@ -6,7 +6,6 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
 format ELF64
 
 public ft_islower
@@ -21,10 +20,12 @@ ft_islower:
 	sub	rdi, 0x61
 	cmp rdi, 0x1A
 	ja @f
+	add rdi, 0x61
 	leave
 	ret
 
 @@:
+	add rdi, 0x61
 	xor rax, rax
 	leave
 	ret

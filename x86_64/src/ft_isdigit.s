@@ -6,7 +6,6 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
 format ELF64
 
 public ft_isdigit
@@ -21,10 +20,12 @@ ft_isdigit:
 	sub	rdi, 0x30
 	cmp rdi, 0x9
 	ja @f
+	add rdi, 0x30
 	leave
 	ret
 
 @@:
+	add rdi, 0x30
 	xor rax, rax
 	leave
 	ret

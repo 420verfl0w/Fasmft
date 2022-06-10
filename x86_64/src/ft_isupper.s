@@ -6,7 +6,6 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
 format ELF64
 
 public ft_isupper
@@ -21,10 +20,12 @@ ft_isupper:
 	sub	rdi, 0x41
 	cmp rdi, 0x1A
 	ja @f
+	add rdi, 0x41
 	leave
 	ret
 
 @@:
+	add rdi, 0x41
 	xor rax, rax
 	leave
 	ret

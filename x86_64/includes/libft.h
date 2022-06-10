@@ -6,7 +6,7 @@
 /*   By: stales <stales@student.42angouleme.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 16:16:07 by stales            #+#    #+#             */
-/*   Updated: 2022/06/10 18:23:57 by snourry          ###   ########.fr       */
+/*   Updated: 2022/06/10 19:06:08 by snourry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,6 @@ extern	int	ft_atoi(const char *nptr);
 extern	int ft_isdigit(char c);
 extern	int	ft_islower(char c);
 extern	int	ft_isupper(char c);
+extern	int	ft_isalpha(char c);
 
 #endif

@@ -3,8 +3,10 @@
 
 int	main(int ac, char **av)
 {
-	ft_putchar_fd('a', 1);
-	ft_putchar('b');
-	printf("%d\n", ft_atoi("\n-123"));
+	
+	printf("digit : %d\n", ft_isdigit(av[1][0]));
+	printf("lower : %d\n", ft_islower(av[1][0]));
+	printf("upper : %d\n", ft_isupper(av[1][0]));
+	printf("alpha : %d\n", ft_isalpha(av[1][0]));
 	return (0);
 }
