@@ -17,7 +17,7 @@ ft_islower:
 	mov rbp, rsp
 	xor rax, rax
 	or rax, 0x1
-	sub	rdi, 0x61
+	sub rdi, 0x61
 	cmp rdi, 0x1A
 	ja @f
 	add rdi, 0x61
