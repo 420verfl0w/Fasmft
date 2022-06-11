@@ -17,7 +17,7 @@ ft_isdigit:
 	mov rbp, rsp
 	xor rax, rax
 	or rax, 0x1
-	sub	rdi, 0x30
+	sub rdi, 0x30
 	cmp rdi, 0x9
 	ja @f
 	add rdi, 0x30
